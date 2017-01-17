@@ -47,4 +47,11 @@ public class BoardTest {
         assertTrue(field.getFieldXCoordinate() == 2);
     }
 
+    @Test
+    public void shouldSetLastMovieFieldSymbol(){
+        //given
+        //when
+        //then
+    }
+
 }
