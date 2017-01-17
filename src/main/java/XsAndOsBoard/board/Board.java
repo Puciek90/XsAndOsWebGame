@@ -14,7 +14,7 @@ public class Board {
     }
 
     private ArrayList<ArrayList<String>> board;
-    private ArrayList<Integer> lastMove;
+    private Field lastMoveField;
     private int height;
     private int width;
     private int moves;
@@ -31,30 +31,30 @@ public class Board {
         }
 
         // TODO: 15.01.17 zastanowić się czy tego gdzieś nie przenieść
-        lastMove = new ArrayList<Integer>(2);
-        lastMove.add(0);
-        lastMove.add(0);
+        lastMoveField = new Field(0,0);
     }
 
     //funkcja sprawdzajaca czy jest zwyciesca. Sprawdza w pionie od punktu ostatniego ruchu
     //pionowo
     private String checkVertical(){
         int amount = 0;
-        int lastMoveXCoordinate = getLastMoveXCoordinate();
-        String lastSymbol = getLastMoveSymbol();
+        String lastSymbol = getLastMoveFieldSymbol();
+        Field checkingField = lastMoveField;
 
-
+        //tu inkrementujemy Y
         for (int i =0; i<height; i++){
-            if (getFieldSymbol(lastMoveXCoordinate, i).equals(lastSymbol)){
+            checkingField.setFieldYCoordinate(i);
+
+            if (getFieldSymbol(checkingField).equals(lastSymbol)){
                 amount++;
             } else {
-                lastSymbol=getFieldSymbol(lastMoveXCoordinate, i);
                 amount =0;
             }
 
             if (amount == amountToVictory) {
-                return getFieldSymbol(lastMoveXCoordinate, i);
+                return getFieldSymbol(checkingField);
             }
+
         }
         return "";
     }
@@ -62,19 +62,20 @@ public class Board {
     //poziomo
     private String checkHorizontal(){
         int amount = 0;
-        int lastMoveYCoordinate = getLastMoveYCoordinate();
-        String lastSymbol = getLastMoveSymbol();
+        Field checkingField = lastMoveField;
+        String lastSymbol = getLastMoveFieldSymbol();
 
 
         for (int i = 0; i<width; i++){
-            if (getFieldSymbol(i, lastMoveYCoordinate).equals(lastSymbol)){
+            checkingField.setFieldXCoordinate(i);
+            if (getFieldSymbol(lastMoveField).equals(lastSymbol)){
                 amount++;
             } else {
                 amount =0;
             }
 
             if (amount == amountToVictory) {
-                return getFieldSymbol(i, lastMoveYCoordinate);
+                return getFieldSymbol(lastMoveField);
             }
         }
         return "";
@@ -84,32 +85,32 @@ public class Board {
         return "";
     }
 
-    private String getLastMoveSymbol(){
-        return board.get(lastMove.get(1)).get(lastMove.get(0));
+    private String getLastMoveFieldSymbol(){
+        return board.get(lastMoveField.getFieldYCoordinate()).get(lastMoveField.getFieldXCoordinate());
     }
 
-    private void setFieldSymbol(int xCoordinate, int yCoordinate, String symbol) {
-        board.get(yCoordinate).set(xCoordinate, symbol);
+    private void setFieldSymbol(Field field, String symbol) {
+        board.get(field.getFieldYCoordinate()).set(field.getFieldXCoordinate(), symbol);
     }
 
-    private String getFieldSymbol(int xCoordinate, int yCoordinate) {
-        return board.get(yCoordinate).get(xCoordinate);
+    private String getFieldSymbol(Field field) {
+        return board.get(field.getFieldYCoordinate()).get(field.getFieldXCoordinate());
     }
 
-    private int getLastMoveXCoordinate(){
-        return lastMove.get(0);
+    private int getLastMoveFieldXCoordinate(){
+        return lastMoveField.getFieldXCoordinate();
     }
 
-    private int getLastMoveYCoordinate(){
-        return lastMove.get(1);
+    private int getLastMoveFieldYCoordinate(){
+        return lastMoveField.getFieldYCoordinate();
     }
 
-    private void setLastMoveXCoordinate(int lastMoveXCoordinate){
-        lastMove.set(0,lastMoveXCoordinate);
+    private void setLastMoveFieldXCoordinate(int lastMoveXCoordinate){
+        lastMoveField.setFieldXCoordinate(lastMoveXCoordinate);
     }
 
-    private void setLastMoveYCoordinate(int lastMoveYCoordinate){
-        lastMove.set(1,lastMoveYCoordinate);
+    private void setLastMoveFieldYCoordinate(int lastMoveYCoordinate){
+        lastMoveField.setFieldYCoordinate(lastMoveYCoordinate);
     }
 
     public void showBoard() {
@@ -123,12 +124,12 @@ public class Board {
     }
 
     public void help(){
-        setFieldSymbol(4,0,"Z");
-        setFieldSymbol(3,0,"Z");
-        setFieldSymbol(2,0,"Z");
+        setFieldSymbol(new Field(4,0),"Z");
+        setFieldSymbol(new Field(3,0),"Z");
+        setFieldSymbol(new Field(2,0),"Z");
 
-        setLastMoveXCoordinate(2);
-        setLastMoveYCoordinate(0);
+        setLastMoveFieldXCoordinate(2);
+        setLastMoveFieldYCoordinate(0);
 
         System.out.println(checkHorizontal());
     }
