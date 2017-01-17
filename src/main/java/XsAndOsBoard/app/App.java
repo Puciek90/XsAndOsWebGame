@@ -1,17 +1,16 @@
 package XsAndOsBoard.app;
 
 import XsAndOsBoard.board.Board;
+import XsAndOsBoard.gameController.GameController;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-        Board board = new Board(3,5,3);
-        board.help();
+        Board board = new Board(3,5);
+        GameController gameController = new GameController(board, 3);
+        gameController.help();
         board.showBoard();
     }
 }

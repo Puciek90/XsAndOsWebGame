@@ -3,113 +3,91 @@ package XsAndOsBoard.board;// Created by Mateusz Płuciennik on 15.01.17.
 import java.util.ArrayList;
 
 public class Board {
-
-    // TODO: 15.01.17 jeżeli amoutToVictory jest większe niż mniejszy z wymiarów -> exception
-    public Board(int height, int width, int amountToVictory) {
-        board = new ArrayList<ArrayList<String>>();
-        this.height = height;
-        this.width = width;
-        this.moves = 0;
-        initBoard(amountToVictory);
-    }
-
     private ArrayList<ArrayList<String>> board;
     private Field lastMoveField;
     private int height;
     private int width;
-    private int moves;
-    private int amountToVictory;
 
-    public void initBoard(int amountToVictory) {
+    // TODO: 17.01.17 zastanowic się nad tym initem 
+    public Board(int height, int width) {
+        board = new ArrayList<ArrayList<String>>();
+        this.height = height;
+        this.width = width;
+        initBoard();
+    }
+
+    private void initBoard() {
         for (int j = 0; j < height; j++) {
             ArrayList<String> column = new ArrayList<String>(width);
             for (int i = 0; i < width; i++) {
                 column.add("0");
             }
             board.add(column);
-            this.amountToVictory = amountToVictory;
         }
-
-        // TODO: 15.01.17 zastanowić się czy tego gdzieś nie przenieść
         lastMoveField = new Field(0,0);
     }
-
-    //funkcja sprawdzajaca czy jest zwyciesca. Sprawdza w pionie od punktu ostatniego ruchu
-    //pionowo
-    private String checkVertical(){
-        int amount = 0;
-        String lastSymbol = getLastMoveFieldSymbol();
-        Field checkingField = lastMoveField;
-
-        //tu inkrementujemy Y
-        for (int i =0; i<height; i++){
-            checkingField.setFieldYCoordinate(i);
-
-            if (getFieldSymbol(checkingField).equals(lastSymbol)){
-                amount++;
-            } else {
-                amount =0;
-            }
-
-            if (amount == amountToVictory) {
-                return getFieldSymbol(checkingField);
-            }
-
-        }
-        return "";
+    
+    public ArrayList<ArrayList<String>> getBoard() {
+        return board;
     }
 
-    //poziomo
-    private String checkHorizontal(){
-        int amount = 0;
-        Field checkingField = lastMoveField;
-        String lastSymbol = getLastMoveFieldSymbol();
-
-
-        for (int i = 0; i<width; i++){
-            checkingField.setFieldXCoordinate(i);
-            if (getFieldSymbol(lastMoveField).equals(lastSymbol)){
-                amount++;
-            } else {
-                amount =0;
-            }
-
-            if (amount == amountToVictory) {
-                return getFieldSymbol(lastMoveField);
-            }
-        }
-        return "";
+    public void setBoard(ArrayList<ArrayList<String>> board) {
+        this.board = board;
     }
 
-    private String checkSlants() {
-        return "";
+    public Field getLastMoveField() {
+        return lastMoveField;
     }
 
-    private String getLastMoveFieldSymbol(){
+    public void setLastMoveField(Field lastMoveField) {
+        this.lastMoveField = lastMoveField;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    
+    public String getLastMoveFieldSymbol(){
         return board.get(lastMoveField.getFieldYCoordinate()).get(lastMoveField.getFieldXCoordinate());
     }
 
-    private void setFieldSymbol(Field field, String symbol) {
-        board.get(field.getFieldYCoordinate()).set(field.getFieldXCoordinate(), symbol);
+    public void setLastMoveFieldSymbol(String symbol){
+         board.get(lastMoveField.getFieldYCoordinate()).set(lastMoveField.getFieldXCoordinate(), symbol);
     }
 
-    private String getFieldSymbol(Field field) {
-        return board.get(field.getFieldYCoordinate()).get(field.getFieldXCoordinate());
-    }
-
-    private int getLastMoveFieldXCoordinate(){
+    public int getLastMoveFieldXCoordinate(){
         return lastMoveField.getFieldXCoordinate();
     }
 
-    private int getLastMoveFieldYCoordinate(){
+    public int getLastMoveFieldYCoordinate(){
         return lastMoveField.getFieldYCoordinate();
     }
 
-    private void setLastMoveFieldXCoordinate(int lastMoveXCoordinate){
+    public void setFieldSymbol(Field field, String symbol) {
+        board.get(field.getFieldYCoordinate()).set(field.getFieldXCoordinate(), symbol);
+    }
+
+    public String getFieldSymbol(Field field) {
+        return board.get(field.getFieldYCoordinate()).get(field.getFieldXCoordinate());
+    }
+
+    public void setLastMoveFieldXCoordinate(int lastMoveXCoordinate){
         lastMoveField.setFieldXCoordinate(lastMoveXCoordinate);
     }
 
-    private void setLastMoveFieldYCoordinate(int lastMoveYCoordinate){
+    public void setLastMoveFieldYCoordinate(int lastMoveYCoordinate){
         lastMoveField.setFieldYCoordinate(lastMoveYCoordinate);
     }
 
@@ -123,15 +101,6 @@ public class Board {
         }
     }
 
-    public void help(){
-        setFieldSymbol(new Field(4,0),"Z");
-        setFieldSymbol(new Field(3,0),"Z");
-        setFieldSymbol(new Field(2,0),"Z");
 
-        setLastMoveFieldXCoordinate(2);
-        setLastMoveFieldYCoordinate(0);
-
-        System.out.println(checkHorizontal());
-    }
 
 }
