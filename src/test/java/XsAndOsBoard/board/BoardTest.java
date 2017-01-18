@@ -50,8 +50,40 @@ public class BoardTest {
     @Test
     public void shouldSetLastMovieFieldSymbol(){
         //given
+        Board board = new Board(3,3);
+
         //when
+        board.setLastMoveField(new Field(1,1));
+        board.setLastMoveFieldSymbol("Z");
+
         //then
+        assertTrue(board.getBoard().get(1).get(1).equals("Z"));
+        assertTrue(board.getLastMoveFieldSymbol().equals("Z"));
+    }
+
+    @Test
+    public void shouldSetLastMovieFieldXCoordinate(){
+        //given
+        Board board = new Board(3,3);
+
+        //when
+        board.setLastMoveFieldXCoordinate(1);
+
+        //then
+        assertTrue(board.getLastMoveFieldXCoordinate() == 1);
+    }
+
+
+    @Test
+    public void shouldSetLastMovieFieldYCoordinate(){
+        //given
+        Board board = new Board(3,3);
+
+        //when
+        board.setLastMoveFieldYCoordinate(1);
+
+        //then
+        assertTrue(board.getLastMoveFieldYCoordinate() == 1);
     }
 
 }

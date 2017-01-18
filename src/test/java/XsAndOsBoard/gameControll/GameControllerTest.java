@@ -1,4 +1,4 @@
-package XsAndOsBoard.gameController;
+package XsAndOsBoard.gameControll;
 
 import org.junit.Test;
 // Created by Mateusz Płuciennik on 17.01.17.

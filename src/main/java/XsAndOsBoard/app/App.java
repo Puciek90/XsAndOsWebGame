@@ -1,7 +1,7 @@
 package XsAndOsBoard.app;
 
 import XsAndOsBoard.board.Board;
-import XsAndOsBoard.gameController.GameController;
+import XsAndOsBoard.gameControll.GameController;
 
 
 public class App 
