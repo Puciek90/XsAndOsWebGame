@@ -193,9 +193,6 @@ public class WinnerCheckerTest {
         board.setFieldSymbol(new Field(6,4), "Z");
         board.setFieldSymbol(new Field(7,3), "Z");
 
-        board.showBoard();
-
-
         WinnerChecker winnerChecker = new WinnerChecker(board,3);
 
         //when
