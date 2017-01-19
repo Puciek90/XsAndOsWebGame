@@ -16,7 +16,7 @@ public class WinnerChecker {
 
     //pionowo
     public String isWinnerInColumn() {
-        int amount = 0;
+        int identicalInARowSymbolNumber = 0;
         String lastSymbol = board.getLastMoveFieldSymbol();
         Field checkingField = board.getLastMoveField();
 
@@ -24,12 +24,12 @@ public class WinnerChecker {
             checkingField.setFieldYCoordinate(i);
 
             if (board.getFieldSymbol(checkingField).equals(lastSymbol)) {
-                amount++;
+                identicalInARowSymbolNumber++;
             } else {
-                amount = 0;
+                identicalInARowSymbolNumber = 0;
             }
 
-            if (amount == amountToVictory) {
+            if (identicalInARowSymbolNumber == amountToVictory) {
                 return board.getFieldSymbol(checkingField);
             }
         }
@@ -38,57 +38,73 @@ public class WinnerChecker {
 
     //poziomo
     public String isWinnerInRow() {
-        int amount = 0;
+        int identicalInARowSymbolNumber = 0;
         Field checkingField = board.getLastMoveField();
         String lastSymbol = board.getLastMoveFieldSymbol();
 
         for (int i = 0; i < board.getWidth(); i++) {
             checkingField.setFieldXCoordinate(i);
             if (board.getFieldSymbol(checkingField).equals(lastSymbol)) {
-                amount++;
+                identicalInARowSymbolNumber++;
             } else {
-                amount = 0;
+                identicalInARowSymbolNumber = 0;
             }
 
-            if (amount == amountToVictory) {
+            if (identicalInARowSymbolNumber == amountToVictory) {
                 return board.getFieldSymbol(checkingField);
             }
         }
         return "";
     }
 
-    // TODO: 19.01.17 dziala w nieskonczonosc!
     public String isWinnerInRightUpSlant() {
         Field checkField = findLeftDownFieldFromLastMoveField();
         int checkFieldXCoordinate = checkField.getFieldXCoordinate();
         int checkFieldYCoordinate = checkField.getFieldYCoordinate();
         String lastMoveSymbol = board.getLastMoveFieldSymbol();
-        int amount = 0;
+        int identicalInARowSymbolNumber = 0;
 
         while (!(checkField.getFieldXCoordinate() == board.getWidth()-1 || checkField.getFieldYCoordinate() == 0)) {
             if (board.getFieldSymbol(checkField).equals(lastMoveSymbol)) {
-                amount++;
+                identicalInARowSymbolNumber++;
             } else {
-                amount = 0;
+                identicalInARowSymbolNumber = 0;
             }
 
-            if (amount == amountToVictory){
+            if (identicalInARowSymbolNumber == amountToVictory){
                 return lastMoveSymbol;
             }
 
-            checkFieldXCoordinate++;
-            checkFieldYCoordinate--;
-            checkField.setFieldXCoordinate(checkFieldXCoordinate);
-            checkField.setFieldYCoordinate(checkFieldYCoordinate);
+            checkField.setFieldXCoordinate(++checkFieldXCoordinate);
+            checkField.setFieldYCoordinate(--checkFieldYCoordinate);
         }
         return "";
     }
 
     public String isWinnerInRightDownSlant() {
+        Field checkField = findLeftDownFieldFromLastMoveField();
+        int checkFieldXCoordinate = checkField.getFieldXCoordinate();
+        int checkFieldYCoordinate = checkField.getFieldYCoordinate();
+        String lastMoveSymbol = board.getLastMoveFieldSymbol();
+        int identicalInARowSymbolNumber = 0;
+
+        while (!(checkField.getFieldXCoordinate() == board.getWidth()-1 || checkField.getFieldYCoordinate() == board.getHeight()-1)) {
+            if (board.getFieldSymbol(checkField).equals(lastMoveSymbol)) {
+                identicalInARowSymbolNumber++;
+            } else {
+                identicalInARowSymbolNumber = 0;
+            }
+
+            if (identicalInARowSymbolNumber == amountToVictory){
+                return lastMoveSymbol;
+            }
+
+            checkField.setFieldXCoordinate(++checkFieldXCoordinate);
+            checkField.setFieldYCoordinate(++checkFieldYCoordinate);
+        }
         return "";
     }
 
-    // TODO: 19.01.17 zrobiono warunek graniczny!!!!!
     public Field findLeftDownFieldFromLastMoveField() {
         Field lastMoveField = board.getLastMoveField();
         int xCoordinate = lastMoveField.getFieldXCoordinate();
@@ -112,16 +128,5 @@ public class WinnerChecker {
             yCoordinate--;
         }
         return new Field(xCoordinate, yCoordinate);
-    }
-
-    public void help() {
-        board.setFieldSymbol(new Field(4, 0), "Z");
-        board.setFieldSymbol(new Field(3, 0), "Z");
-        board.setFieldSymbol(new Field(2, 0), "Z");
-
-        board.setLastMoveFieldXCoordinate(2);
-        board.setLastMoveFieldYCoordinate(0);
-
-        System.out.println(isWinnerInRow());
     }
 }
