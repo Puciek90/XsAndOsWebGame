@@ -15,11 +15,15 @@ public class WinnerCheckerTest {
         Board board = new Board(1,3);
         board.setLastMoveField(lastMovieField);
 
+        board.setFieldSymbol(new Field(0,0), "Z");
+        board.setFieldSymbol(new Field(1,0), "Z");
+        board.setFieldSymbol(new Field(2,0), "Z");
+
         //when
         WinnerChecker winnerChecker = new WinnerChecker(board, 3);
 
         //then
-        assertTrue(winnerChecker.isWinnerInRow().equals("0"));
+        assertTrue(winnerChecker.isWinnerInRow().equals("Z"));
     }
 
     @Test
@@ -59,19 +63,22 @@ public class WinnerCheckerTest {
         assertTrue(winnerChecker.isWinnerInRow().equals("Z"));
     }
 
-
     @Test
     public void shouldFindWinnerInColumn(){
         //given
         Field lastMovieField = new Field(0,0);
         Board board = new Board(3,1);
+
+        board.setFieldSymbol(new Field(0,0), "Z");
+        board.setFieldSymbol(new Field(0,1), "Z");
+        board.setFieldSymbol(new Field(0,2), "Z");
         board.setLastMoveField(lastMovieField);
 
         //when
         WinnerChecker winnerChecker = new WinnerChecker(board, 3);
 
         //then
-        assertTrue(winnerChecker.isWinnerInColumn().equals("0"));
+        assertTrue(winnerChecker.isWinnerInColumn().equals("Z"));
     }
 
     @Test
@@ -144,8 +151,7 @@ public class WinnerCheckerTest {
         assertTrue(winnerChecker.isWinnerInRow().equals(""));
     }
 
-    // TODO: 19.01.17 Change function name! Present name mislead.
-    // TODO: 19.01.17 test more points without code duplication 
+    // TODO: 19.01.17 test more points without code duplication
     @Test
     public void shouldFindLeftDownFieldFromLastMoveField(){
         //given
@@ -199,5 +205,56 @@ public class WinnerCheckerTest {
 
         //then
         assertTrue(winnerChecker.isWinnerInRightUpSlant().equals("Z"));
+    }
+
+    @Test
+    public void shouldNotFindWinnerInRightUpSlant(){
+        //given
+        Board board = new Board(10,10);
+        Field lastMoveField = new Field(5,5);
+
+        board.setLastMoveField(lastMoveField);
+        board.setFieldSymbol(new Field(5,5), "Z");
+
+        WinnerChecker winnerChecker = new WinnerChecker(board,5);
+
+
+        //then
+        assertTrue(winnerChecker.isWinnerInRightUpSlant().equals(""));
+    }
+
+    @Test
+    public void FindWinnerInRightUpSlant(){
+        //given
+        Board board = new Board(10,10);
+        Field lastMoveField = new Field(5,5);
+
+        board.setLastMoveField(lastMoveField);
+        board.setFieldSymbol(new Field(5,5), "Z");
+        board.setFieldSymbol(new Field(6,6), "Z");
+        board.setFieldSymbol(new Field(7,7), "Z");
+
+        WinnerChecker winnerChecker = new WinnerChecker(board,3);
+
+
+        //then
+        assertTrue(winnerChecker.isWinnerInRightDownSlant().equals("Z"));
+    }
+
+    @Test
+    public void FindWinnerInRightUpSlantWhereWinnerIsStickToBoard(){
+        //given
+        Board board = new Board(10,10);
+        Field lastMoveField = new Field(7,7);
+
+        board.setLastMoveField(lastMoveField);
+        board.setFieldSymbol(new Field(7,7), "Z");
+        board.setFieldSymbol(new Field(8,8), "Z");
+        board.setFieldSymbol(new Field(9,9), "Z");
+
+        WinnerChecker winnerChecker = new WinnerChecker(board,3);
+
+        //then
+        assertTrue(winnerChecker.isWinnerInRightDownSlant().equals("Z"));
     }
 }

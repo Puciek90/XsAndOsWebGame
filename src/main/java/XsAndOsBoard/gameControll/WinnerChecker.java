@@ -64,7 +64,7 @@ public class WinnerChecker {
         String lastMoveSymbol = board.getLastMoveFieldSymbol();
         int identicalInARowSymbolNumber = 0;
 
-        while (!(checkField.getFieldXCoordinate() == board.getWidth()-1 || checkField.getFieldYCoordinate() == 0)) {
+        while ((checkField.getFieldXCoordinate() < board.getWidth() || checkField.getFieldYCoordinate() > 0)) {
             if (board.getFieldSymbol(checkField).equals(lastMoveSymbol)) {
                 identicalInARowSymbolNumber++;
             } else {
@@ -82,13 +82,13 @@ public class WinnerChecker {
     }
 
     public String isWinnerInRightDownSlant() {
-        Field checkField = findLeftDownFieldFromLastMoveField();
+        Field checkField = findLeftUpFieldFromLastMoveField();
         int checkFieldXCoordinate = checkField.getFieldXCoordinate();
         int checkFieldYCoordinate = checkField.getFieldYCoordinate();
         String lastMoveSymbol = board.getLastMoveFieldSymbol();
         int identicalInARowSymbolNumber = 0;
 
-        while (!(checkField.getFieldXCoordinate() == board.getWidth()-1 || checkField.getFieldYCoordinate() == board.getHeight()-1)) {
+        while ((checkField.getFieldXCoordinate() < board.getWidth() || checkField.getFieldYCoordinate() < board.getHeight())) {
             if (board.getFieldSymbol(checkField).equals(lastMoveSymbol)) {
                 identicalInARowSymbolNumber++;
             } else {
@@ -116,7 +116,6 @@ public class WinnerChecker {
         }
         return new Field(xCoordinate, yCoordinate);
     }
-
 
     public Field findLeftUpFieldFromLastMoveField() {
         Field lastMoveField = board.getLastMoveField();
