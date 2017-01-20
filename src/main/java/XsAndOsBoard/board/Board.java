@@ -20,7 +20,7 @@ public class Board {
         for (int j = 0; j < height; j++) {
             ArrayList<String> column = new ArrayList<String>(width);
             for (int i = 0; i < width; i++) {
-                column.add("0");
+                column.add("");
             }
             board.add(column);
         }
