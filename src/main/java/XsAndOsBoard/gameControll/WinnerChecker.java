@@ -6,7 +6,6 @@ import XsAndOsBoard.board.Field;
 public class WinnerChecker {
     // TODO: 17.01.17 autowired?
     private Board board;
-    private int moves;
     private int amountToVictory;
 
     public WinnerChecker(Board board, int amountToVictory) {
@@ -14,11 +13,12 @@ public class WinnerChecker {
         this.amountToVictory = amountToVictory;
     }
 
-    //pionowo
+    // TODO: 20.01.17 should be private
+    // TODO: 20.01.17 intancja obiektu jest zwracana przez boaed. get lastmovie field? 
     public String isWinnerInColumn() {
         int identicalInARowSymbolNumber = 0;
         String lastSymbol = board.getLastMoveFieldSymbol();
-        Field checkingField = board.getLastMoveField();
+        Field checkingField = new Field(board.getLastMoveFieldXCoordinate(), board.getLastMoveFieldYCoordinate());
 
         for (int i = 0; i < board.getHeight(); i++) {
             checkingField.setFieldYCoordinate(i);
@@ -35,11 +35,10 @@ public class WinnerChecker {
         }
         return "";
     }
-
-    //poziomo
+    // TODO: 20.01.17 should be private
     public String isWinnerInRow() {
         int identicalInARowSymbolNumber = 0;
-        Field checkingField = board.getLastMoveField();
+        Field checkingField = new Field(board.getLastMoveFieldXCoordinate(), board.getLastMoveFieldYCoordinate());
         String lastSymbol = board.getLastMoveFieldSymbol();
 
         for (int i = 0; i < board.getWidth(); i++) {
@@ -56,7 +55,7 @@ public class WinnerChecker {
         }
         return "";
     }
-
+    // TODO: 20.01.17 should be private
     public String isWinnerInRightUpSlant() {
         Field checkField = findLeftDownFieldFromLastMoveField();
         int checkFieldXCoordinate = checkField.getFieldXCoordinate();
@@ -80,7 +79,7 @@ public class WinnerChecker {
         }
         return "";
     }
-
+    // TODO: 20.01.17 should be private
     public String isWinnerInRightDownSlant() {
         Field checkField = findLeftUpFieldFromLastMoveField();
         int checkFieldXCoordinate = checkField.getFieldXCoordinate();
@@ -104,7 +103,7 @@ public class WinnerChecker {
         }
         return "";
     }
-
+    // TODO: 20.01.17 should be private
     public Field findLeftDownFieldFromLastMoveField() {
         Field lastMoveField = board.getLastMoveField();
         int xCoordinate = lastMoveField.getFieldXCoordinate();
@@ -116,7 +115,7 @@ public class WinnerChecker {
         }
         return new Field(xCoordinate, yCoordinate);
     }
-
+    // TODO: 20.01.17 should be private
     public Field findLeftUpFieldFromLastMoveField() {
         Field lastMoveField = board.getLastMoveField();
         int xCoordinate = lastMoveField.getFieldXCoordinate();
@@ -127,5 +126,21 @@ public class WinnerChecker {
             yCoordinate--;
         }
         return new Field(xCoordinate, yCoordinate);
+    }
+
+    public String giveWinnersSymbolIfWinnerExist(){
+        String winnerSymbol = isWinnerInColumn();
+        if (!winnerSymbol.equals("")) return winnerSymbol;
+
+        winnerSymbol = isWinnerInRow();
+        if (!winnerSymbol.equals("")) return winnerSymbol;
+
+        winnerSymbol = isWinnerInRightDownSlant();
+        if (!winnerSymbol.equals("")) return winnerSymbol;
+
+        winnerSymbol = isWinnerInRightUpSlant();
+        if (!winnerSymbol.equals("")) return winnerSymbol;
+
+        return "";
     }
 }
