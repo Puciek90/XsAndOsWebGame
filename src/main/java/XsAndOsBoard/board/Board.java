@@ -8,7 +8,6 @@ public class Board {
     private int height;
     private int width;
 
-    // TODO: 17.01.17 zastanowic się nad tym initem 
     public Board(int height, int width) {
         board = new ArrayList<ArrayList<String>>();
         this.height = height;
@@ -20,7 +19,7 @@ public class Board {
         for (int j = 0; j < height; j++) {
             ArrayList<String> column = new ArrayList<String>(width);
             for (int i = 0; i < width; i++) {
-                column.add("");
+                column.add("0");
             }
             board.add(column);
         }
@@ -36,7 +35,7 @@ public class Board {
     }
 
     public Field getLastMoveField() {
-        return lastMoveField;
+        return this.lastMoveField;
     }
 
     public void setLastMoveField(Field lastMoveField) {

@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="490ed5da-6529-4972-bdd0-1b45b9b70c8f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsColumn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsRows.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightDownSlantTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightUpSlantTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/XsAndOsBoard/gameControll/WinnerCheckerTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/XsAndOsBoard/app/App.class" afterPath="$PROJECT_DIR$/target/classes/XsAndOsBoard/app/App.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/XsAndOsBoard/board/Board.class" afterPath="$PROJECT_DIR$/target/classes/XsAndOsBoard/board/Board.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/XsAndOsBoard/gameControll/WinnerChecker.class" afterPath="$PROJECT_DIR$/target/classes/XsAndOsBoard/gameControll/WinnerChecker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/XsAndOsBoard/board/BoardTest.class" afterPath="$PROJECT_DIR$/target/test-classes/XsAndOsBoard/board/BoardTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/XsAndOsBoard/gameControll/WinnerCheckerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/XsAndOsBoard/gameControll/WinnerCheckerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/app/App.java" afterPath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/app/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Board.java" afterPath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/GameController.java" afterPath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/GameController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java" afterPath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/Player.java" afterPath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/PlayerInterface.java" afterPath="$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/PlayerInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/board/BoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/board/BoardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/GameControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/GameControllerTest.java" />
     </list>
     <ignored path="XsAndOsBoard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +37,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/XsAndOsBoard$WinnerCheckerTest.coverage" NAME="WinnerCheckerTest Coverage Results" MODIFIED="1484918352586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>XsAndOsBoard.gameControll.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/XsAndOsBoard$WinnerCheckerTest_shouldFindWinnerInRightUpSlant.coverage" NAME="WinnerCheckerTest.shouldFindWinnerInRightUpSlant Coverage Results" MODIFIED="1484858213739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>XsAndOsBoard.gameControll.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/XsAndOsBoard$WinnerCheckerTest_shouldFindLeftBottomCornerFromLastMoveField.coverage" NAME="WinnerCheckerTest.shouldFindLeftBottomCornerFromLastMoveField Coverage Results" MODIFIED="1484782146624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>XsAndOsBoard.gameControll.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/XsAndOsBoard$BoardTest.coverage" NAME="BoardTest Coverage Results" MODIFIED="1484918374420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>XsAndOsBoard.board.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/XsAndOsBoard$WinnerCheckerTest_findWinnerInRightUpSlantWhereWinnerIsStickToBoard.coverage" NAME="WinnerCheckerTest.findWinnerInRightUpSlantWhereWinnerIsStickToBoard Coverage Results" MODIFIED="1484941879656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>XsAndOsBoard.gameControll.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/XsAndOsBoard$WinnerCheckerTest_shouldGiveWinnerSymbol.coverage" NAME="WinnerCheckerTest.shouldGiveWinnerSymbol Coverage Results" MODIFIED="1484944119647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>XsAndOsBoard.gameControll.*</FILTER>
     </SUITE>
   </component>
@@ -42,67 +65,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WinnerChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#WinnerChecker#0;class#WinnerChecker#0" expanded="false" />
-                <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
-                <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
-                <element signature="method#isWinnerInRightUpSlant#0;class#WinnerChecker#0" expanded="false" />
-                <element signature="method#isWinnerInRightDownSlant#0;class#WinnerChecker#0" expanded="false" />
-                <element signature="method#findLeftDownFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
-                <element signature="method#findLeftUpFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WinnerCheckerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="210" column="51" selection-start-line="210" selection-start-column="51" selection-end-line="210" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#shouldFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindWinnerInRow2#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindWinnerInRow3#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindWinnerInColumn2#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindWinnerInColumn3#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldNotFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldNotFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindLeftDownFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindTopFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#shouldNotFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-                <element signature="method#FindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Field.java">
+      <file leaf-file-name="WinnerCheckerRightUpSlantTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightUpSlantTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
-                <element signature="e#606#607#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#shouldFindWinnerInRightUpSlantWhenSlantIsFull#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+                <element signature="e#813#819#0" expanded="false" />
+                <element signature="method#shouldFindWinnerInRightUpSlantWhenLastMoveBeginsSlant#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+                <element signature="method#shouldFindWinnerInRightUpSlantWhenLastMoveEndsSlant#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+                <element signature="method#shouldFindWinnerInRightUpSlantWhenWinnerIsInTheMiddle#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+                <element signature="method#shouldNotFindWinnerWhenLastMoveFieldIsInRightBoardCorner#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+                <element signature="method#shouldNotFindWinnerWhenLastMoveFieldIsInLeftUpBoardCorner#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+                <element signature="method#shouldNotFindWinnerWhenLastMoveFieldIsInCenter#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+              <folding>
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindBoardLeftEdge#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+              <folding>
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindBoardUpEdge#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+                <element signature="method#shouldFindBoardLeftEdge#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -113,8 +133,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,11 +156,33 @@
         <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameController/GameControllerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameController/GameController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/PlayerInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/app/App.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/GameControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/GameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Board.java" />
-        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/board/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/shouldFindWinnerInRowWhenLastMoveBeginsCollumn.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsCollumn.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsRows.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerChceckerBoundaryConditions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerChceckerBoundaryConditionsEdgeFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsEdgeFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsRightUpEdgeFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftDownEdgeFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftUpEdgeFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/board/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsColumn.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightUpSlantTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightDownSlantTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftDownEdgeFieldsFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftUpEdgeFieldsFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java" />
       </list>
     </option>
   </component>
@@ -192,9 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,6 +334,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="gameControll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnerChcecker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="board" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -322,6 +395,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XsAndOsBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,6 +520,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,6 +538,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="XsAndOsBoard.gameControll" />
       <recent name="XsAndOsBoard.board" />
       <recent name="XsAndOsBoard.gameController" />
     </key>
@@ -445,19 +552,19 @@
       <recent name="$PROJECT_DIR$/src/test/java/XsAndOsBoard" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WinnerCheckerTest">
-    <configuration default="false" name="WinnerCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow">
+    <configuration default="false" name="WinnerCheckerRightDownSlantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="XsAndOsBoard.gameControll.*" />
+          <option name="PATTERN" value="XsAndOsBoard.gameControll.winnerChcecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="XsAndOsBoard" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll" />
-      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.WinnerCheckerTest" />
+      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll.winnerChcecker" />
+      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.winnerChcecker.WinnerCheckerRightDownSlantTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -472,45 +579,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="XsAndOsBoard.board.*" />
+          <option name="PATTERN" value="XsAndOsBoard.gameControll.winnerChcecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="XsAndOsBoard" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="XsAndOsBoard.board" />
-      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.board.BoardTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardTest.shouldInitBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="XsAndOsBoard.board.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="XsAndOsBoard" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="XsAndOsBoard.board" />
-      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.board.BoardTest" />
-      <option name="METHOD_NAME" value="shouldInitBoard" />
+      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll.winnerChcecker" />
+      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.winnerChcecker.WinnerCheckerRightDownSlantTest" />
+      <option name="METHOD_NAME" value="shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -524,19 +605,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WinnerCheckerTest.FindWinnerInRightUpSlant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInLeftDownBoardCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="XsAndOsBoard.gameControll.*" />
+          <option name="PATTERN" value="XsAndOsBoard.gameControll.winnerChcecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="XsAndOsBoard" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll" />
-      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.WinnerCheckerTest" />
-      <option name="METHOD_NAME" value="FindWinnerInRightUpSlant" />
+      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll.winnerChcecker" />
+      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.winnerChcecker.WinnerCheckerRightDownSlantTest" />
+      <option name="METHOD_NAME" value="shouldNotFindWinnerWhenLastMoveFieldIsInLeftDownBoardCorner" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -550,19 +631,45 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="XsAndOsBoard.gameControll.*" />
+          <option name="PATTERN" value="XsAndOsBoard.gameControll.winnerChcecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="XsAndOsBoard" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll" />
-      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.WinnerCheckerTest" />
-      <option name="METHOD_NAME" value="FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" />
+      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll.winnerChcecker" />
+      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.winnerChcecker.WinnerCheckerRightDownSlantTest" />
+      <option name="METHOD_NAME" value="shouldNotFindWinnerWhenLastMoveFieldIsInCenter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="XsAndOsBoard.gameControll.winnerChcecker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="XsAndOsBoard" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="XsAndOsBoard.gameControll.winnerChcecker" />
+      <option name="MAIN_CLASS_NAME" value="XsAndOsBoard.gameControll.winnerChcecker.WinnerCheckerTest" />
+      <option name="METHOD_NAME" value="shouldGiveWinnerSymbolWhenWinnerIsInRow" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -926,19 +1033,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldInitBoard" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest.FindWinnerInRightUpSlant" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInLeftDownBoardCorner" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInCenter" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest.FindWinnerInRightUpSlant" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldInitBoard" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInCenter" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInLeftDownBoardCorner" />
       </list>
     </recent_temporary>
   </component>
@@ -960,48 +1067,53 @@
       <workItem from="1484612000935" duration="985000" />
       <workItem from="1484676397959" duration="16665000" />
       <workItem from="1484766163629" duration="19665000" />
-      <workItem from="1484846391941" duration="19765000" />
+      <workItem from="1484846391941" duration="20607000" />
+      <workItem from="1484918042296" duration="10282000" />
+      <workItem from="1484938167491" duration="7078000" />
+      <workItem from="1485000592187" duration="6914000" />
+      <workItem from="1485014220411" duration="7965000" />
+      <workItem from="1485024138722" duration="7856000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WinnerCheckerTest - 2017.01.20 at 02h 42m 36s.xml">
-      <configuration name="WinnerCheckerTest" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest - 2017.01.21 at 22h 16m 23s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest - 2017.01.20 at 02h 43m 04s.xml">
-      <configuration name="WinnerCheckerTest" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest_shouldNotFindWinnerWhenLastMoveFieldIsInCenter - 2017.01.21 at 22h 13m 08s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInCenter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlant - 2017.01.20 at 00h 34m 22s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlant" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest_shouldNotFindWinnerWhenLastMoveFieldIsInLeftDownBoardCorner - 2017.01.21 at 22h 13m 03s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInLeftDownBoardCorner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 28m 30s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest_shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner - 2017.01.21 at 22h 13m 00s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 28m 39s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest_shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner - 2017.01.21 at 22h 14m 17s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 32m 18s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest_shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner - 2017.01.21 at 22h 14m 18s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 33m 15s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerRightDownSlantTest_shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner - 2017.01.21 at 22h 15m 41s.xml">
+      <configuration name="WinnerCheckerRightDownSlantTest.shouldNotFindWinnerWhenLastMoveFieldIsInRightUpBoardCorner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 33m 39s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerTest_shouldGiveWinnerSymbolWhenWinnerIsInRow - 2017.01.21 at 22h 24m 14s.xml">
+      <configuration name="WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 34m 14s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerTest_shouldGiveWinnerSymbolWhenWinnerIsInRow - 2017.01.21 at 22h 24m 49s.xml">
+      <configuration name="WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerCheckerTest_FindWinnerInRightUpSlantWhereWinnerIsStickToBoard - 2017.01.20 at 00h 34m 19s.xml">
-      <configuration name="WinnerCheckerTest.FindWinnerInRightUpSlantWhereWinnerIsStickToBoard" configurationId="JUnit" />
+    <history-entry file="WinnerCheckerTest_shouldGiveWinnerSymbolWhenWinnerIsInRow - 2017.01.21 at 22h 25m 36s.xml">
+      <configuration name="WinnerCheckerTest.shouldGiveWinnerSymbolWhenWinnerIsInRow" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75472000" />
+    <option name="totallyTimeSpent" value="116409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1011,25 +1123,25 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35276532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41255605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37369207" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3721973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29062957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5241581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38415545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4185351" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1046,18 +1158,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33781764" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4185351" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40807176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1838565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41255605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41405082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29062957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3721973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37335286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1076,7 +1188,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="52" />
+      <option name="time" value="107" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1085,43 +1197,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/GameControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#WinnerChecker#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightUpSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightDownSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftDownFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftUpFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#giveWinnersSymbolIfWinnerExist#0;class#WinnerChecker#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4932">
+          <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#568#576#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/GameControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#giveWinnersSymbolIfWinnerExist#0;class#WinnerChecker#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3780">
+          <caret line="210" column="51" selection-start-line="210" selection-start-column="51" selection-end-line="210" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#giveWinnersSymbolIfWinnerExist#0;class#WinnerChecker#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3276">
           <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#shouldFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRow2#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRow3#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn2#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn3#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindLeftDownFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindTopFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#FindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,7 +1321,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,9 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1422">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,8 +1339,8 @@
         <state relative-caret-position="198">
           <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#568#576#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1160,37 +1351,18 @@
           <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#WinnerChecker#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightUpSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightDownSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftDownFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftUpFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#giveWinnersSymbolIfWinnerExist#0;class#WinnerChecker#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#shouldFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRow2#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRow3#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn2#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn3#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindLeftDownFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindTopFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#FindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,7 +1370,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1206,9 +1380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,13 +1397,9 @@
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#WinnerChecker#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightUpSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightDownSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftDownFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftUpFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#giveWinnersSymbolIfWinnerExist#0;class#WinnerChecker#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1241,7 +1408,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,7 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,24 +1461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/app/App.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/board/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1319,91 +1473,212 @@
         <state relative-caret-position="288">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/PlayerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#568#576#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/GameControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsRows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/board/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#shouldFindWinnerInColumnWhenLastMoveBeginsColumn#0;class#WinnerCheckerBoundaryConditionsColumn#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInColumnWhenLastMoveEndsColumn#0;class#WinnerCheckerBoundaryConditionsColumn#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInColumnWhenWinnerIsInTheMiddle#0;class#WinnerCheckerBoundaryConditionsColumn#0" expanded="false" />
+            <element signature="method#shouldFindWinnerWhereColumnIsFull#0;class#WinnerCheckerBoundaryConditionsColumn#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/board/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="174">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="method#showBoard#0;class#Board#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="166">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightDownSlantTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="576">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
-            <element signature="e#982#1175#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#shouldFindWinnerInRightDownSlantWhenSlantIsFull#0;class#WinnerCheckerRightDownSlantTest#0" expanded="false" />
+            <element signature="e#816#822#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightDownSlantWhenLastMoveBeginsSlant#0;class#WinnerCheckerRightDownSlantTest#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightDownSlantWhenLastMoveEndsSlant#0;class#WinnerCheckerRightDownSlantTest#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightUpSlantWhenWinnerIsInTheMiddle#0;class#WinnerCheckerRightDownSlantTest#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/XsAndOsBoard/gameControll/WinnerChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="193">
+          <caret line="88" column="100" selection-start-line="88" selection-start-column="100" selection-end-line="88" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#WinnerChecker#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInColumn#0;class#WinnerChecker#0" expanded="false" />
             <element signature="method#isWinnerInRow#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightUpSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#isWinnerInRightDownSlant#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftDownFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
-            <element signature="method#findLeftUpFieldFromLastMoveField#0;class#WinnerChecker#0" expanded="false" />
+            <element signature="method#giveWinnersSymbolIfWinnerExist#0;class#WinnerChecker#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/WinnerCheckerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="210" column="51" selection-start-line="210" selection-start-column="51" selection-end-line="210" selection-end-column="51" />
+        <state relative-caret-position="72">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding>
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindBoardLeftEdge#0;class#WinnerCheckerBoundaryConditionsLeftAndDownEdgesFieldsFinding#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInTopRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownRightCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindFieldWhenLastMoveFieldIsInDownLeftCorner#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindBoardUpEdge#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+            <element signature="method#shouldFindBoardLeftEdge#0;class#WinnerCheckerBoundaryConditionsLeftAndUpEdgesFieldsFinding#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerRightUpSlantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#shouldFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRow2#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRow3#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn2#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInColumn3#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInColumn#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInRow#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindLeftDownFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindTopFieldFromLastMoveField#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#shouldNotFindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
-            <element signature="method#FindWinnerInRightUpSlant#0;class#WinnerCheckerTest#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightUpSlantWhenSlantIsFull#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+            <element signature="e#813#819#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightUpSlantWhenLastMoveBeginsSlant#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightUpSlantWhenLastMoveEndsSlant#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+            <element signature="method#shouldFindWinnerInRightUpSlantWhenWinnerIsInTheMiddle#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+            <element signature="method#shouldNotFindWinnerWhenLastMoveFieldIsInRightBoardCorner#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+            <element signature="method#shouldNotFindWinnerWhenLastMoveFieldIsInLeftUpBoardCorner#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
+            <element signature="method#shouldNotFindWinnerWhenLastMoveFieldIsInCenter#0;class#WinnerCheckerRightUpSlantTest#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XsAndOsBoard/gameControll/winnerChcecker/WinnerCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

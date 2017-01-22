@@ -19,7 +19,7 @@ public class BoardTest {
         Integer width = 4;
         Integer height = 5;
         Board board = new Board(height, width);
-        String[] rowInBoard = new String[]{"","","",""};
+        String[] rowInBoard = new String[]{"0","0","0","0"};
 
         //then
         assertThat(board.getBoard(), hasSize(height));

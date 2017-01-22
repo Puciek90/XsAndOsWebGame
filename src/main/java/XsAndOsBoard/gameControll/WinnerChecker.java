@@ -14,7 +14,6 @@ public class WinnerChecker {
     }
 
     // TODO: 20.01.17 should be private
-    // TODO: 20.01.17 intancja obiektu jest zwracana przez boaed. get lastmovie field? 
     public String isWinnerInColumn() {
         int identicalInARowSymbolNumber = 0;
         String lastSymbol = board.getLastMoveFieldSymbol();
@@ -57,14 +56,14 @@ public class WinnerChecker {
     }
     // TODO: 20.01.17 should be private
     public String isWinnerInRightUpSlant() {
-        Field checkField = findLeftDownFieldFromLastMoveField();
-        int checkFieldXCoordinate = checkField.getFieldXCoordinate();
-        int checkFieldYCoordinate = checkField.getFieldYCoordinate();
+        Field checkingField = findLeftDownFieldFromLastMoveField();
+        int checkFieldXCoordinate = checkingField.getFieldXCoordinate();
+        int checkFieldYCoordinate = checkingField.getFieldYCoordinate();
         String lastMoveSymbol = board.getLastMoveFieldSymbol();
         int identicalInARowSymbolNumber = 0;
 
-        while ((checkField.getFieldXCoordinate() < board.getWidth() || checkField.getFieldYCoordinate() > 0)) {
-            if (board.getFieldSymbol(checkField).equals(lastMoveSymbol)) {
+        while (checkFieldXCoordinate < board.getWidth() && checkFieldYCoordinate >= 0) {
+            if (board.getFieldSymbol(checkingField).equals(lastMoveSymbol)) {
                 identicalInARowSymbolNumber++;
             } else {
                 identicalInARowSymbolNumber = 0;
@@ -74,8 +73,8 @@ public class WinnerChecker {
                 return lastMoveSymbol;
             }
 
-            checkField.setFieldXCoordinate(++checkFieldXCoordinate);
-            checkField.setFieldYCoordinate(--checkFieldYCoordinate);
+            checkingField.setFieldXCoordinate(++checkFieldXCoordinate);
+            checkingField.setFieldYCoordinate(--checkFieldYCoordinate);
         }
         return "";
     }
@@ -87,7 +86,7 @@ public class WinnerChecker {
         String lastMoveSymbol = board.getLastMoveFieldSymbol();
         int identicalInARowSymbolNumber = 0;
 
-        while ((checkField.getFieldXCoordinate() < board.getWidth() || checkField.getFieldYCoordinate() < board.getHeight())) {
+        while (checkFieldXCoordinate < board.getWidth() && checkFieldYCoordinate < board.getHeight()) {
             if (board.getFieldSymbol(checkField).equals(lastMoveSymbol)) {
                 identicalInARowSymbolNumber++;
             } else {
@@ -121,7 +120,7 @@ public class WinnerChecker {
         int xCoordinate = lastMoveField.getFieldXCoordinate();
         int yCoordinate = lastMoveField.getFieldYCoordinate();
 
-        while (!(xCoordinate == 0 || yCoordinate == 0)) {
+        while (!(xCoordinate ==0 || yCoordinate == 0)) {
             xCoordinate--;
             yCoordinate--;
         }

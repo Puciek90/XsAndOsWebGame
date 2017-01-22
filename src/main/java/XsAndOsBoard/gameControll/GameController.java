@@ -1,5 +1,6 @@
 package XsAndOsBoard.gameControll;// Created by Mateusz Płuciennik on 20.01.17.
 
+import XsAndOsBoard.board.Board;
 import XsAndOsBoard.player.Player;
 
 import java.util.LinkedList;
@@ -10,6 +11,8 @@ public class GameController {
     private int moves;
     // TODO: 20.01.17 Autowired
     private WinnerChecker winnerChecker;
+    // TODO: 20.01.17 autowired
+    private Board board;
     private int playersNumer;
 
     public GameController(WinnerChecker winnerChecker, int playerNumber){
@@ -47,19 +50,49 @@ public class GameController {
 
             if (player.hasToken()) {
                 player.setToken(false);
-//              iterator.set(player);
 
                 if(iterator.hasNext()) {
                     Player nextPlayer = iterator.next();
                     nextPlayer.setToken(true);
-//                    iterator.set(nextPlayer);
                 } else {
                     Player firstPlayerInList = players.getFirst();
                     firstPlayerInList.setToken(true);
-//                    iterator.set(firstPlayerInList);
                 }
             }
         }
 
     }
+
+    public boolean checkIfAnyPlayerHasToken(){
+        ListIterator<Player> iterator = players.listIterator();
+
+        while (iterator.hasNext()){
+            Player player = iterator.next();
+            if (player.hasToken()){
+            return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean checkIfPlayerListHasOnlyOneToken() {
+        ListIterator<Player> iterator = players.listIterator();
+        int tokenCounter = 0;
+
+        while (iterator.hasNext()){
+            Player player = iterator.next();
+            if (player.hasToken()){
+                tokenCounter++;
+            }
+        }
+        return (tokenCounter == 1);
+    }
+
+    //setting last move in board
+
+  /*  public Player giveWinnerIfExist(){
+        winnerChecker.
+
+        return null;
+    }*/
 }
